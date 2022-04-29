@@ -291,5 +291,15 @@ footer .creado-por a:hover {text-decoration: underline;}
 		width: 100%;
 	}
 
+	.grid .item-contenido {
+		height: auto;
+	}
+
 	
+}
+
+@media screen and (max-width: 400px) {
+	.grid .item {
+		width: calc(100% - 20px);
+	}
 }
