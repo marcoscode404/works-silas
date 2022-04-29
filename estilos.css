@@ -13,6 +13,11 @@ body {
 	width: 100%;
 }
 
+:root{
+	--white: #fff;
+	--yellow: rgb(198, 201, 21);
+}
+
 a {
 	text-decoration: none;
 }
@@ -55,7 +60,7 @@ header .barra-busqueda {
 	width: 70%;
 	height: 40px;
 	line-height: 40px;
-	background: #fff;
+	background: var(--white);
 	padding: 0 20px;
 	border-radius: 100px;
 	border: none;
@@ -77,7 +82,7 @@ header .categorias a {
 }
 
 header .categorias a.activo {
-	color: #000;
+	color: var(--yellow)
 }
 
 /* ------------------------- */
@@ -130,7 +135,8 @@ header .categorias a.activo {
 }
 
 #perfilx .logo {
-	color: #fff;
+	color: var(--white);
+	font-weight: 700;
 	display: flex;
 	align-items: center;
 	gap: .5rem;
@@ -148,7 +154,8 @@ header .categorias a.activo {
 
 /* sobre */
 #perfilx .perfil p {
-	color: #fff;
+	color: var(--white);
+	font-weight: 700;
 	padding: 1rem;
 	
 
@@ -182,7 +189,7 @@ header .categorias a.activo {
 
 .overlay .descripcion {
 	display: block;
-	background: #fff;
+	background: var(--white);
 	padding: 20px;
 	text-align: center;
 	margin-top: 5px;
@@ -197,7 +204,7 @@ header .categorias a.activo {
 .overlay #btn-cerrar-popup {
 	background: none;
 	font-size: 20px;
-	color: #fff;
+	color: var(--white);
 	border: none;
 	cursor: pointer;
 	position: absolute;
@@ -221,14 +228,13 @@ footer .redes-sociales a {
 	width: 60px;
 	height: 60px;
 	background: #000;
-	color: #fff;
+	color: var(--white);
 	margin: 20px;
 	text-align: center;
 	border-radius: 100px;
 	transition: .3s ease all;
 }
 
-footer .redes-sociales .twitter {background: #0d73b3;}
 footer .redes-sociales .facebook {background: #3b5998;}
 footer .redes-sociales .instagram {background: #c13584;}
 
@@ -257,7 +263,7 @@ footer .creado-por  {
 }
 
 footer .creado-por a {
-	color: #fff;
+	color: var(--white);
 	font-size: 1rem;
 }
 footer .creado-por a:hover {text-decoration: underline;}
