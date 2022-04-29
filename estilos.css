@@ -183,7 +183,7 @@ footer .redes-sociales a {
 	transition: .3s ease all;
 }
 
-footer .redes-sociales .twitter {background: #1da1f2;}
+footer .redes-sociales .twitter {background: #0d73b3;}
 footer .redes-sociales .facebook {background: #3b5998;}
 footer .redes-sociales .instagram {background: #c13584;}
 
@@ -205,14 +205,16 @@ footer .contenedor-icono:hover a {
 	}
 }
 
-footer .creado-por {
+footer .creado-por  {
 	margin-bottom: 40px;
 	text-align: center;
 	font-size: 14px;
-	color: #c13584;
 }
 
-footer .creado-por a {color: #000;}
+footer .creado-por a {
+	color: #fff;
+	font-size: 1rem;
+}
 footer .creado-por a:hover {text-decoration: underline;}
 
 /* ------------------------- */
