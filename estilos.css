@@ -4,9 +4,13 @@
 	box-sizing: border-box;
 }
 
+
 body {
-	background: #15a3db;
+	background: rgba(49, 17, 46, 0.479);
+	background: linear-gradient(165deg, rgba(30, 46, 40, 0.986) 4%, rgba(12,154,207,1) 60%);
+
 	font-family: 'Open Sans', sans-serif;
+	width: 100%;
 }
 
 a {
@@ -33,7 +37,7 @@ header .logo {
 }
 
 header .logo h1 {
-	color: #363d4d;
+	color: #c6ccda;
 }
 
 header .logo p {
@@ -112,7 +116,43 @@ header .categorias a.activo {
 	border-radius: 8px;	
 }
 
+#perfilx {
+	padding: 0.5rem;
+	width: 100%;
+	
+}
 
+#perfilx .logo img{
+	margin-left: 10px;
+	width: 4rem;
+	border-radius: 50%;
+	border: 1.54px solid rgb(223, 227, 233);
+}
+
+#perfilx .logo {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+}
+
+
+#perfilx .perfil {
+	margin-top: 2rem;
+	background-color: rgb(131, 116, 116);
+	padding: 20px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+ 
+
+/* sobre */
+#perfilx .perfil p {
+	color: #fff;
+	padding: 1rem;
+	
+
+}
 
 /* ------------------------- */
 /* Overlay */
