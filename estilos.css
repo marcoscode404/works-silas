@@ -96,10 +96,14 @@ header .categorias a.activo {
 	width: 100%;
 	opacity: 0;
 	transition: opacity 0.5s linear 1s;
+	
 }
 
 .grid.imagenes-cargadas {
 	opacity: 1;
+	background-color: #242526;
+	border-radius: 8px;
+	
 }
 
 .grid .item {
@@ -108,18 +112,23 @@ header .categorias a.activo {
 	padding: 0;
 	margin: 10px;
 	width: calc(33.333333% - 20px);
+	margin-bottom: 1rem;
+	
+	
 }
 
 .grid .item-contenido {
 	position: relative;
+	height: 15rem;
 	
 }
 
 .grid .item img {
 	width: 100%;
+	height: 100%;
 	cursor: pointer;
 	vertical-align: top;
-	border: 1px solid rgb(196, 183, 183);
+	border: 1px solid rgb(119, 107, 107);
 	border-radius: 8px;	
 }
 
@@ -281,4 +290,6 @@ footer .creado-por a:hover {text-decoration: underline;}
 	header .barra-busqueda {
 		width: 100%;
 	}
+
+	
 }
