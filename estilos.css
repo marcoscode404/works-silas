@@ -18,6 +18,7 @@ body {
 :root{
 	--white: #fff;
 	--yellow: rgb(198, 201, 21);
+	--green: rgb(77, 224, 84);
 }
 
 a {
@@ -44,7 +45,7 @@ header .logo {
 }
 
 header .logo h1 {
-	color: #c6ccda;
+	color: #acb7d1;
 }
 
 header .logo p {
@@ -84,7 +85,7 @@ header .categorias a {
 }
 
 header .categorias a.activo {
-	color: var(--yellow)
+	color: var(--green)
 }
 
 /* ------------------------- */
@@ -103,7 +104,6 @@ header .categorias a.activo {
 	opacity: 1;
 	background-color: #242526;
 	border-radius: 8px;
-	
 }
 
 .grid .item {
@@ -130,7 +130,14 @@ header .categorias a.activo {
 	vertical-align: top;
 	border: 1px solid rgb(119, 107, 107);
 	border-radius: 8px;	
+
+    padding: 1px;
+
+    background-position: center center;
+    background-size: cover;
+    background-clip: content-box;
 }
+
 
 #perfilx {
 	padding: 0.5rem;
@@ -142,11 +149,22 @@ header .categorias a.activo {
 	margin-left: 10px;
 	width: 4rem;
 	border-radius: 50%;
-	border: 1.54px solid rgb(223, 227, 233);
+	border: 2px solid var(--green);
+
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2px;
+    border-radius: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+#perfilx .logo span{
+	color: var(--green);
 }
 
 #perfilx .logo {
-	color: var(--white);
 	font-weight: 700;
 	display: flex;
 	align-items: center;
@@ -156,19 +174,19 @@ header .categorias a.activo {
 
 #perfilx .perfil {
 	margin-top: 2rem;
-	background-color: rgb(131, 116, 116);
+	background-color: #29292E;
 	padding: 20px;
-	border-top-right-radius: 25px;
-	border-bottom-left-radius: 25px;
+	border-radius: 0 8px;
 }
  
 
 /* sobre */
 #perfilx .perfil p {
 	color: var(--white);
-	font-weight: 700;
-	padding: 1rem;
-	
+	padding: .7rem;
+	font-size: 16px;
+    line-height: 24px;
+	text-align: justify;
 
 }
 
@@ -234,7 +252,7 @@ footer .redes-sociales {
 	flex-wrap: wrap;
 }
 
-footer .redes-sociales a {
+footer .redes-sociales a{
 	display: block;
 	width: 60px;
 	height: 60px;
@@ -246,11 +264,15 @@ footer .redes-sociales a {
 	transition: .3s ease all;
 }
 
+footer .redes-sociales a:hover{
+	border: 2px solid var(--white);
+}
+
 footer .redes-sociales .facebook {background: #3b5998;}
 footer .redes-sociales .instagram {background: #c13584;}
 
 footer .redes-sociales a i {
-	font-size: 20px;
+	font-size: 1.8rem;
 	line-height: 60px;
 }
 
