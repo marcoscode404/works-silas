@@ -7,9 +7,7 @@
 
 
 body {
-	background: rgba(12,154,207,1);
-	background-image: linear-gradient(165deg, rgba(30, 46, 40, 0.986) 4%, rgba(12,154,207,1) 60%);
-	background-repeat: no-repeat;
+	background: var(--black);
 	
 	font-family: 'Open Sans', sans-serif;
 
@@ -17,8 +15,11 @@ body {
 
 :root{
 	--white: #fff;
+	--white-400: #F2F2F2;
 	--yellow: rgb(198, 201, 21);
 	--green: rgb(77, 224, 84);
+	--black: #141518;
+	--black-400: #2C2F34;
 }
 
 a {
@@ -35,21 +36,43 @@ a {
 /* HEADER */
 /* ------------------------- */
 
-header {
-	padding: 40px 0;
+
+.headerwidth {
+	background-color: #2C2F34;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(./img/cover.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10rem;
+	
 }
 
-header .logo {
+
+
+
+.headerwidth .logo {
 	text-align: center;
 	margin-bottom: 40px;
+	color: var(--white-400);
+	font-size: 1.2rem;
 }
 
-header .logo h1 {
-	color: #acb7d1;
-}
 
-header .logo p {
+.headerwidth .logo p {
 	color: #ece1e1;
+}
+
+
+
+
+
+header {
+	padding: 40px 0;
+	
 }
 
 header form {
@@ -102,7 +125,7 @@ header .categorias a.activo {
 
 .grid.imagenes-cargadas {
 	opacity: 1;
-	background-color: #242526;
+	background-color: var(--black-400);
 	border-radius: 8px;
 }
 
@@ -112,6 +135,7 @@ header .categorias a.activo {
 	padding: 0;
 	margin: 10px;
 	width: calc(33.333333% - 20px);
+
 	margin-bottom: 1rem;
 	
 	
@@ -128,7 +152,7 @@ header .categorias a.activo {
 	height: 100%;
 	cursor: pointer;
 	vertical-align: top;
-	border: 1px solid rgb(119, 107, 107);
+	border: 1px solid rgb(114, 102, 102);
 	border-radius: 8px;	
 
     padding: 1px;
@@ -136,7 +160,16 @@ header .categorias a.activo {
     background-position: center center;
     background-size: cover;
     background-clip: content-box;
+	transition: transform 1s;
+	
 }
+
+.grid .item img:hover {
+    transform: translateY(-5px);
+}
+
+
+
 
 
 #perfilx {
@@ -250,6 +283,7 @@ footer .redes-sociales {
 	justify-content: center;
 	padding: 20px;
 	flex-wrap: wrap;
+	
 }
 
 footer .redes-sociales a{
@@ -262,6 +296,7 @@ footer .redes-sociales a{
 	text-align: center;
 	border-radius: 100px;
 	transition: .3s ease all;
+	
 }
 
 footer .redes-sociales a:hover{
@@ -317,6 +352,8 @@ footer .creado-por a:hover {text-decoration: underline;}
 		height: auto;
 	}
 
+
+
 	
 }
 
@@ -324,4 +361,7 @@ footer .creado-por a:hover {text-decoration: underline;}
 	.grid .item {
 		width: calc(100% - 20px);
 	}
+
+	
 }
+
